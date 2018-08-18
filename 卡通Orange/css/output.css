@@ -1,0 +1,275 @@
+ul {
+  padding: 0;
+}
+ul li {
+  display: block;
+}
+
+.bg-wrapper {
+  position: relative;
+  min-width: 1280px;
+  height: 1000px;
+  background-image: url(../img/picture.jpg);
+}
+
+.content {
+  width: 1150px;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  height: 100px;
+}
+
+.search-wrapper {
+  position: relative;
+  top: 20px;
+}
+.search-wrapper > input {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 25px;
+  width: 330px;
+  line-height: 30px;
+  padding-left: 30px;
+  color: white;
+}
+
+.glyphicon.search {
+  left: 5px;
+  color: white;
+  position: absolute;
+  top: 10px;
+}
+.glyphicon.remove {
+  right: 5px;
+  font-size: 17px;
+  position: absolute;
+  top: 10px;
+}
+.glyphicon.remove:hover {
+  color: white;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+nav ul li {
+  flex: 1;
+  background: black;
+  color: white;
+  font-weight: bold;
+  line-height: 40px;
+  padding-left: 5px;
+  border-right: 1px solid gray;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(1, 0.3, 0.5, 1);
+  -moz-transition: all 0.5s cubic-bezier(1, 0.3, 0.5, 1);
+  -o-transition: all 0.5s cubic-bezier(1, 0.3, 0.5, 1);
+  -webkit-transition: all 0.5s cubic-bezier(1, 0.3, 0.5, 1);
+}
+nav ul li:hover {
+  color: black;
+  background: orange;
+}
+
+.banner {
+  position: relative;
+  height: 350px;
+}
+.banner .toshow li {
+  height: 350px;
+  position: absolute;
+  width: 100%;
+}
+
+.fade.in {
+  -webkit-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+#img1, #img2, #img3, #img4 {
+  background: url(../img/picture.jpg);
+}
+
+#img1 {
+  background-position-y: -1000px;
+}
+
+#img2 {
+  background-position-y: -1350px;
+}
+
+#img3 {
+  background-position-y: -1700px;
+}
+
+#img4 {
+  background-position-y: -2050px;
+}
+
+#btns {
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: 5%;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+#btns li {
+  flex-basis: 20%;
+  height: 20px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  display: inline-block;
+}
+#btns li:hover {
+  border: 1px solid white;
+  background: green;
+}
+
+#left {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: calc(50% - 15px);
+  left: 0;
+  z-index: 5;
+  margin-left: -15px;
+}
+#left:hover {
+  color: black;
+}
+
+#right {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: calc(50% - 15px);
+  right: 0;
+  margin-right: -15px;
+}
+#right:hover {
+  color: black;
+}
+
+.articles {
+  height: 450px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.articles h4, .articles h5, .articles h6 {
+  font-weight: bold;
+}
+.articles article {
+  padding: 10px;
+  color: white;
+  flex-basis: 32.5%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.articles h5 {
+  color: orange;
+}
+.articles article p {
+  font-size: 12px;
+}
+.articles article span {
+  color: #2b74a3;
+}
+.articles article .img5 {
+  height: 200px;
+  background: url(../img/picture.jpg);
+  background-position: -1150px -1000px;
+  margin-bottom: 20px;
+}
+.articles article .img6 {
+  height: 200px;
+  background: url(../img/picture.jpg);
+  background-position: -1500px -1000px;
+}
+
+.btnlong {
+  color: white;
+  background: #2B74A3;
+  height: 25px;
+  width: 135px;
+  border-radius: 15px;
+  border: none;
+}
+.btnlong:hover {
+  color: orange;
+}
+
+.footer {
+  min-width: 1280px;
+  position: relative;
+  margin-top: -20px;
+  height: 250px;
+  background: #f7941e;
+  padding-top: 20px;
+}
+.footer ul li {
+  float: left;
+  margin-right: 3%;
+}
+.footer ul li h6 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.info {
+  line-height: 2;
+}
+
+.talk {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.time {
+  font-size: 12px;
+}
+
+.blue {
+  color: #84bfe5;
+}
+
+.img7 {
+  width: 200px;
+  height: 150px;
+}
+
+.square {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  background: white;
+  border-radius: 20px;
+  left: 10px;
+  top: 20px;
+}
+.square:after {
+  content: "\00a0";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 50%;
+  border-width: 20px 0 15px 30px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+  margin-right: -25px;
+  transform: rotate(12deg);
+}
+
+/*# sourceMappingURL=output.css.map */
